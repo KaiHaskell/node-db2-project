@@ -6,7 +6,13 @@ module.exports = {
     connection: {
       filename: "./data/car-dealer.db3"
     },
-    useNullAsDefault: true //Only needed for SQLite!
+    useNullAsDefault: true, //Only needed for SQLite!
+    migrations: {
+      directory: "./migrations"
+    },
+    seeds: {
+      directory: "./seeds"
+    }
   },
 
   staging: {
